@@ -1,0 +1,108 @@
+  
+  .verification{
+    padding: 8% 7%;
+    .dot_img{
+      text-align: center;
+    }
+    .otp{
+      h3{
+        font-family: RedHatDisplay;
+        font-size: 30px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: -0.85px;
+        color: #324148;
+        margin-top: 15%;
+      }
+      p{
+        font-family: Roboto;
+        font-size: 17px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 0.17px;
+        color: #a3a3a5;
+        span{
+          font-family: Roboto;
+          font-size: 17px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: 0.16px;
+          color: #2c2c2c;
+        }
+      }
+      #form {
+        max-width: 240px;
+        
+        input {
+          margin: 0 5px;
+          text-align: center;
+          line-height: 80px;
+          font-size: 25px;
+          border: solid 1px #ccc;
+          box-shadow: 0 0 5px #ccc inset;
+          outline: none;
+          width: 20%;
+          transition: all .2s ease-in-out;
+          border-radius: 3px;
+          height: 70px;
+          
+          &:focus {
+            border-color: #1a73e8;
+            // box-shadow: 0 0 5px purple inset;
+          }
+          
+          &::selection {
+            background: transparent;
+          }
+        }
+        
+        button {
+          margin:  30px 0 50px;
+          width: 100%;
+          padding: 6px;
+          background-color: #B85FC6;
+          border: none;
+          text-transform: uppercase;
+        }
+      }
+    }
+    .footer{
+      display: flex;
+      width: 100%;
+      position: absolute;
+      bottom: 10%;
+      p{
+        font-size: 17px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #92989d;
+        font-family: RedHatText;
+        width: 67%;
+        span{
+          font-size: 17px;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #0091ff;
+          font-family: RedHatText;
+        }
+      }
+    }
+    
+    ion-button.ion-color.ion-color-light.ios.button.button-solid.ion-activatable.ion-focusable.hydrated{
+      width: 123px;
+      height: 50px;
+      background-color: #f5f5f5;
+    }
+  }
