@@ -1,65 +1,92 @@
 
-  ion-slides.ios.slides-ios.swiper-container.hydrated.swiper-container-initialized.swiper-container-horizontal.swiper-container-ios {
-    height: 70%;
+  /* ----- Ionic -----*/
+  .swiper-container {
+    height: 100vw;
+  }
+
+  ion-button.ion-color.ion-color-light.ios.button.button-solid.ion-activatable.ion-focusable.hydrated{
+    width: 123px;
+    height: 50px;
+    background-color: #f5f5f5;
+    margin-top: 3vw;
   }
   
-
-.box{
-  width: 50vw;
-  height: 50vw;
-  background-color: #ffd82a;
-  margin: 0 auto;
-}
-
-#container {
-  width: 100%;
-  margin: 0 auto;
-  padding: 10%;
-  margin-top: 20%;
-}
-
-#title {
-  font-family: RedHatDisplay;
-  font-size: 30px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: -1.25px;
-  color: #324148;
-}
-#subtitle {
-  font-family: Roboto;
-  font-size: 22px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 0.1px;
-  color: #92989d;
-}
-
-.swiper-pagination-bullet-active {
-  background: #5f6368 !important;
-}
-
-.footer{
-  margin-top: 20%;
-  padding: 0 4%;
-  p{
-    font-family: RedHatText;
-    font-size: 20px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 1px;
-    color: #1c8aed;
+  .swiper-pagination-bullet-active {
+    background: #5f6368 !important;
   }
-}
 
-ion-button.ion-color.ion-color-light.ios.button.button-solid.ion-activatable.ion-focusable.hydrated{
-  width: 123px;
-  height: 50px;
-  background-color: #f5f5f5;
-}
+  /* ----- Screen Content -----*/
+  .screen{
+    padding: 10vw;
+    --distance-from-top: env(safe-area-inset-top);
+    --distance-from-bottom: env(safe-area-inset-bottom);
+    #slider {
+      width: 100vw;
+      .logo{
+        img{
+          height: 50vw;
+        }
+      }
+      #title {
+        font-family: RedHatDisplay;
+        font-size: 7vw;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: -1.25px;
+        color: #324148;
+      }
+      #subtitle {
+        font-family: Roboto;
+        font-size: 5vw;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 0.1px;
+        color: #92989d;
+      }
+    }
+  
+    /* ----- Footer -----*/
+    .footersection{
+      padding: 0 4%;
+      position: absolute;
+      bottom: calc(0vw + var(--distance-from-bottom));
+      left: 50%;
+      transform: translateX(-50%);  
+      width: 100vw;
+      display: flex;
+      .skipbtn{
+        width: 70vw;
+        button{
+          background-color: #fff;
+          border: none;
+          color: #1c8aed;
+          padding: 5vw 10vw;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+      }
+      .nextbtn{
+        button{
+          background-color: #f5f5f5;
+          border: none;
+          color: #757575;
+          padding: 5vw 10vw;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  
